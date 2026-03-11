@@ -20,6 +20,8 @@ app.use("/public", express.static("./public"))
 app.use(express.static(path.join(__dirname, 'dist')))
 app.use("/api", Router)
 
+
+
 app.use((req, res) => {
     express.static(path.join(__dirname, 'dist'))
 });
